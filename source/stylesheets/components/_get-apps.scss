@@ -1,0 +1,50 @@
+.get-apps {
+  background-color: $color-white;
+
+  .app-info {
+    max-width: 585px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+
+    @include mq($bp960) {
+      padding: 100px 0 150px;
+    }
+
+    h3 {
+      font-size: 30px;
+      color: $color-cobalt;
+      margin: 0 0 40px;
+      line-height: 1;
+    }
+
+    p {
+      color: $color-casper;
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .dots {
+      margin-top: 50px;
+      @include mq($bp960) {
+        margin-top: 150px;
+      }
+      li {
+        margin-bottom: 15px;
+        @include mq($bp960) {
+          margin-bottom: 30px;
+        }
+
+
+        .fa-circle {
+          color: $color-casper;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+

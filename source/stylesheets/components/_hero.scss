@@ -1,0 +1,85 @@
+.hero {
+  background-color: $color-cobalt;
+
+  @include mq($bp960) {
+    padding-top: 35px;
+  }
+
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 30px;
+
+    @include mq($bp1440) {
+      padding: 0;
+    }
+  }
+
+  .hero-info {
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    @include mq($bp580) {
+      flex: 1 1 50%;
+      padding: 65px 10% 0 0;
+    }
+
+    @include mq($bp960) {
+      flex: 1 1 36%;
+      padding: 65px 16% 0 0;
+    }
+
+    h2 {
+      margin: 0;
+      color: $color-white;
+      font-size: 42px;
+      margin: 0 0 20px;
+      line-height: 1.2;
+    }
+
+    p {
+      color: $color-white;
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0 0 35px;
+    }
+
+    .cta-btn {
+      a {
+        background-color: $color-caribbean-green;
+        display: inline-block;
+        color: $color-white;
+        padding: 15px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 1;
+        transition: all 0.2s linear;
+
+        @include hover {
+          background-color: $color-burnt-sienna;
+        }
+      }
+    }
+  }
+
+  .hero-image {
+    display: none;
+
+    @include mq($bp580) {
+      display: block;
+      flex: 1 1 40%;
+      background: url('../images/bag_2x.png');
+      height: 490px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center bottom;
+    }
+
+    @include mq($bp960) {
+      flex: 1 1 48%;
+      // padding: 65px 16% 0 0;
+    }
+  }
+}
