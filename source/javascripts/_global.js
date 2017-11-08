@@ -1,0 +1,1 @@
+var DAREN = DAREN || {};
